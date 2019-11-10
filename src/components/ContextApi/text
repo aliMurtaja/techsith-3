@@ -1,0 +1,23 @@
+context provided a way to pass data through the components tree kwithout having to pass props down manually at every level
+
+it means that we can pass the data through grand-grand parent components to their grand-grand child components without passing props with the help of the contextapi in simple way
+
+for this we use the React.createContext, this func then return an obj ( 1)provider  2)consumer  )
+    a) using the provider at the top level of the components, we provided the data
+    b)using the consumer, we can use the data(that is provided by the provider)
+
+syntex:--> React.createContext(defautValue)
+if we dont provided the value into the provided in that case comsumer use the defautValue
+
+the components in which we use the provider, called provider components
+
+the components in which we use the consumer, called consumer components
+if we want to use the state(grand parent to child) in consumer components then we have to write something like this
+
+
+it take thee callback func in which we get the data of the provider that we can render
+<myContext.comsumer >
+    
+    {(data)=>/*render something based on the context data*/}
+
+</ myContext.comsumer >

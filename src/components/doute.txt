@@ -1,0 +1,31 @@
+--------------------------
+
+1)components/part3/FunCompoPart3  ---> 
+    line->24
+    {/* {  `user name : ${user} and age : ${age} `} */}
+
+------------------------------
+
+2)
+when we use the predefined components like
+    <div age="10">ali</div>
+it means
+    React.createElement("div", {
+    age: "10"
+    }, "ali");
+
+but when we make the custom components like
+    <ALI age= "10"/>
+then hows it work internally
+
+--------------------------------
+
+
+part 9)
+
+some of life cycle hooks remain to learn on of which is 
+    a) componentsWillUpdate()
+
+
+
+    in shouldComponentUpdate() -->there is two parameter one of them is nextState and when we come from the componentDidMount() with some changing the state then y we have to compare nextState and previouse State wheras both will be the same bce after the componentDidMount() state will the change in to the constructer also

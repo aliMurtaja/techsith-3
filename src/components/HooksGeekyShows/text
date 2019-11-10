@@ -1,0 +1,31 @@
+hooks are func that let u hook inot react state and life cycle into func components
+it means u use the react without cls, and u can use yr local state and cls into yr func components
+react provided few built in hooks 1)useState 2)useEffect
+introduce in 16.8
+
+
+rule of hooks
+1) only call the hooks at the top level of the func components
+2)we should not call it into the loop, conditions and nested func
+3)we should not call it into the reguler js func and cls components as well instead cal it into the func level components
+
+useState hooks 
+
+useState() func :-->
+1) it allow to use the local state into yr func components
+2) it return the pair  : 1)first in which ur state value 2) seconed in which func that u change the value
+3) react will preserve the state value after rerender
+4) u can call the func into the eventHandler or someWherer but not into the return statemenmt
+
+
+useEffect hooks
+
+useEffect() func :-->
+1) if u familiar with life cycle of the cls components u can things of useEffect hooks as componentDidMount, componentDidUpdate, componentWillUnMount combined
+1)it means after components mount (first mount), useEffect run
+2)after update(rerender the components), useEffect run
+3)after unmount(components unmount), useEffect run
+4) so, we can do many thing in useEffect(like :--> data feting etc...)
+5)useEffect(firstArg, seconedArg)
+    a)firstArg : we pass a func that execute after components (mount, update, unmount)
+    b)seconed : this is array of the value on which useEffect depened on

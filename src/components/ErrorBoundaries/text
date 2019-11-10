@@ -1,0 +1,8 @@
+* First of all Err boundaries is react component in which we use the (func of the Err)life cycle of the Err boundaries
+
+1)Err boundaries is react component that catch the js Err anyWhere in the child component tree, log those Err and display the fallback instead of the component tree that crashed
+
+2)Err boundaries catch the  Err during the rendering, or in any life cycle methode or constructer of whole tree below them
+
+3)for cls become the Err boundaries, if it defines either(or both) of the life cycle of the methode a)static getDrivedStateFromError() or componentDidCatch()
+

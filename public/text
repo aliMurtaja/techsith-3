@@ -1,0 +1,26 @@
+* we can put our image/assests into the two pls
+    a) public folder
+    b) src folder
+
+
+in a)public folder :-->
+
+if we put the file into the public folder it will not be proceed by the webpack
+and when we builed the app, those file will be copied into the the builed folder untouched(webpack not touch)
+
+to give the reference of the file into the public folder, we use the variable called PUBLIC_URL with prefix %%
+
+note that in public folder none of the file(assests/image) will not be proceed by webpack
+
+
+in b) src folder
+
+with webpack, all assests/image/files work similar like css
+you can import a file right in js module , this tells webpack to include that file in bundle
+
+unlike css imports, importing a file you give a string value, this value is make the file path that u can reference in ur copied
+
+note that in public folder the file(assests/image) will be proceed by webpack
+
+
+
